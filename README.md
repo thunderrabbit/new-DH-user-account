@@ -73,5 +73,5 @@ Now your password is 132 random characters.  It can be reset in control panel (t
 
 12. If everything worked, then cleanup
 
-    cd $HOME/new-DH-user-account
-    ./cleanup.sh
+    cd $HOME
+    $HOME/new-DH-user-account/cleanup.sh
