@@ -8,3 +8,7 @@ DOMAIN=$(ls ~ | grep "\.")
 git config --global core.excludesfile ~/.gitignore
 git config --global user.name "Rob Nugen"
 git config --global user.email $DOMAIN@robnugen.com
+
+# copy files from git repo to ~
+cp .bash_aliases $HOME/
+cp .gitignore $HOME/
