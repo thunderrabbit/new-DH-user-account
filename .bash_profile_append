@@ -1,0 +1,7 @@
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
+
+EDITOR=/usr/bin/emacs
+
+export EDITOR
