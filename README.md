@@ -6,7 +6,7 @@ It sets up `git`, `emacs`, and passwordless authentication, then essentially dis
 
 In the steps below, replace `example.com` with your new domain.
 
-#### Set up the new domain
+## Set up the new domain
 
 From Dreamhost Control Panel -> Domains -> Manage Domains -> [Add Hosting to a Domain / Sub-domain](https://panel.dreamhost.com/index.cgi?tree=domain.manage&current_step=Index&next_step=ShowAddhttp&domain=)
 
@@ -14,18 +14,18 @@ Fill in the blanks, including create a new user.
 
 Make note of the password created by Dreamhost.  We will need it where PASSWORD is written below.
 
-#### Give shell access to the user
+## Give shell access to the user
 
 Make sure the new user is a shell user at https://panel.dreamhost.com/index.cgi?tree=users.users
 
-#### On local machine, create a new `ssh` key
+## On local machine, create a new `ssh` key
     ssh-keygen
 
 Enter `example.com` as the key filename
 
 Move the keypair to `~/.ssh`
 
-#### On local machine, set up ~/.ssh/config
+## On local machine, set up ~/.ssh/config
 
 Append something like the following to `~/.ssh/config`:
 
@@ -34,34 +34,34 @@ Append something like the following to `~/.ssh/config`:
         User example
         IdentityFile ~/.ssh/example.com
 
-#### scp the public key to the new account using PASSWORD:
+## scp the public key to the new account using PASSWORD:
 
     scp ~/.ssh/example.com.pub example:authorized_keys
 
-#### ssh to the new account using PASSWORD:
+## ssh to the new account using PASSWORD:
 
     ssh example
 
-#### While on the new account, clone this repo:
+## While on the new account, clone this repo:
 
     git clone https://github.com/thunderrabbit/new-DH-user-account.git
 
-#### Set up the account and passwordless entry
+## Set up the account and passwordless entry
 
     cd new-DH-user-account
     ./setup.sh
 
-#### Exit the account
+## Exit the account
 
     exit
 
-#### ssh to the new account without password
+## ssh to the new account without password
 
     ssh example
 
 It's very very important you log in without password here!
 
-#### Basically destroy password logins
+## Basically destroy password logins
 
     cd $HOME/new-DH-user-account
     ./password_fix.sh
@@ -70,7 +70,7 @@ Enter PASSWORD when requested
 
 Now your password is 132 random characters.  It can be reset in control panel (to a measly 31 characters) but the point is to never user passwords to log in.
 
-#### If everything worked, then cleanup
+## If everything worked, then cleanup
 
     cd $HOME/new-DH-user-account
     ./cleanup.sh
