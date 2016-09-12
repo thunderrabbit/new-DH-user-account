@@ -64,9 +64,14 @@ It's very very important you log in without password here!
 
 11. Basically destroy password logins
 
-    cd new-DH-user-account
+    cd $HOME/new-DH-user-account
     ./password_fix.sh
 
 Enter PASSWORD when requested
 
 Now your password is 132 random characters.  It can be reset in control panel (to a measly 31 characters) but the point is to never user passwords to log in.
+
+12. If everything worked, then cleanup
+
+    cd $HOME/new-DH-user-account
+    ./cleanup.sh
