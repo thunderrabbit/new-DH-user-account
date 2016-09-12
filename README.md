@@ -39,15 +39,13 @@ Append something like the following to `~/.ssh/config`:
 
     scp ~/.ssh/example.com.pub example:authorized_keys
 
-Enter PASSWORD when asked.
-
 6. ssh to the new account using PASSWORD:
 
     ssh example
 
 7. While on the new account, clone this repo:
 
-    clone https://github.com/thunderrabbit/new-DH-user-account.git
+    git clone https://github.com/thunderrabbit/new-DH-user-account.git
 
 8. Set up the account and passwordless entry
 
