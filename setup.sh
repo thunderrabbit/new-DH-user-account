@@ -19,3 +19,6 @@ cp .gitignore $HOME/
 
 ## todo: figure out how to use $DOMAIN env variable
 ls ~ | grep "\." >> $HOME/.gitignore
+
+# append the contents of .bash_profile_append to ~/.bash_profile
+cat .bash_profile_append >> $HOME/.bash_profile
