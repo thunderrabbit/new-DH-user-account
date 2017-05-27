@@ -25,6 +25,8 @@ Enter `example.com` as the key filename
 
 Move the keypair to `~/.ssh`
 
+    mv example.com* ~/.ssh
+
 ## On local machine, set up ~/.ssh/config
 
 Append something like the following to `~/.ssh/config`:
