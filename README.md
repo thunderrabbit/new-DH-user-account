@@ -31,8 +31,9 @@ Append something like the following to `~/.ssh/config`:
 
     Host example
         HostName example.com
-        User example
+        User example_user
         IdentityFile ~/.ssh/example.com
+        IdentitiesOnly yes
 
 ## scp the public key to the new account using PASSWORD:
 
