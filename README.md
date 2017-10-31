@@ -2,7 +2,7 @@
 
 This essentially spells out the tasks I do each time I set up a new user with shell access on Dreamhost.
 
-It sets up `git`, `emacs`, and passwordless authentication, then essentially disables password logins by creating a random 132 character password and helpfully forgetting it.
+It sets up `git`, `emacs`, and passwordless authentication, then essentially disables password logins by creating a random 432 character password and helpfully forgetting it.
 
 In the steps below, replace `example.com` with your new domain.
 
@@ -24,6 +24,8 @@ Make sure the new user is a shell user at https://panel.dreamhost.com/index.cgi?
 Enter `example.com` as the key filename
 
 Move the keypair to `~/.ssh`
+
+    mv example.com* ~/.ssh
 
 ## On local machine, set up ~/.ssh/config
 
@@ -69,7 +71,7 @@ It's very very important you log in without password here!
 
 Enter PASSWORD when requested
 
-Now your password is 132 random characters.  It can be reset in control panel (to a measly 31 characters) but the point is to never user passwords to log in.
+Now your password is 432 random characters.  It can be reset in control panel (to a measly 31 characters) but the point is to never user passwords to log in.
 
 ## If everything worked, then cleanup
 
