@@ -69,7 +69,7 @@ It's very very important you log in without password here!
     cd $HOME/new-DH-user-account
     ./password_fix.sh
 
-Enter PASSWORD when requested
+Enter the short PASSWORD created by Dreamhost when requested
 
 Now your password is 432 random characters.  It can be reset in control panel (to a measly 31 characters) but the point is to never user passwords to log in.
 
