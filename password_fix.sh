@@ -14,4 +14,4 @@ NEW_PASSWORD=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w $LENGTH | head -n
 
 echo "Okay interactively changing password. Do NOT enter anything at the next password prompt:"
 echo -e "$OLD_PASSWORD\n$NEW_PASSWORD\n$NEW_PASSWORD" | passwd
-echo "if password is reported as changed, then it's now $LENGTH random characters but I didn't keep a copy.  tada!"
+echo "if password is reported as changed, then it's now $LENGTH random characters and I didn't keep a copy.  tada!"
