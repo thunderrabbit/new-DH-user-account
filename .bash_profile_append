@@ -2,6 +2,8 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+echo tmux new -A -s robone
+
 EDITOR=/usr/bin/emacs
 
 export EDITOR
