@@ -19,13 +19,10 @@ Make note of the password created by Dreamhost.  We will need it where PASSWORD 
 Make sure the new user is a shell user at https://panel.dreamhost.com/index.cgi?tree=users.users
 
 ## On local machine, create a new `ssh` key
+    cd ~/.ssh
     ssh-keygen
 
 Enter `example.com` as the key filename
-
-Move the keypair to `~/.ssh`
-
-    mv example.com* ~/.ssh
 
 ## On local machine, set up ~/.ssh/config
 
@@ -49,16 +46,13 @@ Append something like the following to `~/.ssh/config`:
 
     git clone https://github.com/thunderrabbit/new-DH-user-account.git
 
-## Set up the account and passwordless entry
+## Set up the account with passwordless entry
 
     cd new-DH-user-account
     ./setup.sh
-
-## Exit the account
-
     exit
 
-## ssh to the new account without password
+## On local machine, ssh to the new account without password
 
     ssh example
 
@@ -71,7 +65,9 @@ It's very very important you log in without password here!
 
 Enter the short PASSWORD created by Dreamhost when requested
 
-Now your password is 432 random characters.  It can be reset in control panel (to a measly 31 characters) but the point is to never user passwords to log in.
+Now your password is 432 random characters.  
+It can be reset in control panel (to a measly 31 characters) but
+the point is to never use passwords to log in.
 
 ## If everything worked, then cleanup
 
