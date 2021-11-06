@@ -73,3 +73,12 @@ the point is to never use passwords to log in.
 
     cd ~
     ~/new-DH-user-account/cleanup.sh
+
+## Optional: create key for new server to ssh out
+
+    cd ~
+    ssh-keygen
+
+## Optional: Add key to Github:
+
+https://github.com/settings/ssh/new
