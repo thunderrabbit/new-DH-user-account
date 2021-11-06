@@ -66,7 +66,7 @@ It's very very important you log in without password here!
 
 ## Basically destroy password logins
 
-    cd $HOME/new-DH-user-account
+    cd ~/new-DH-user-account
     ./password_fix.sh
 
 Enter the short PASSWORD created by Dreamhost when requested
@@ -75,5 +75,5 @@ Now your password is 432 random characters.  It can be reset in control panel (t
 
 ## If everything worked, then cleanup
 
-    cd $HOME
-    $HOME/new-DH-user-account/cleanup.sh
+    cd ~
+    ~/new-DH-user-account/cleanup.sh
