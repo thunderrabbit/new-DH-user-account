@@ -79,6 +79,9 @@ the point is to never use passwords to log in.
     cd ~
     ssh-keygen
 
-## Optional: Add key to Github:
+## Optional: Add key to something:
 
-https://github.com/settings/ssh/new
+    cat ~/.ssh/id_rsa.pub
+
+* https://github.com/settings/ssh/new
+* https://bitbucket.org/account/settings/ssh-keys/
