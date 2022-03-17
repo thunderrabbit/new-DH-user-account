@@ -85,3 +85,13 @@ the point is to never use passwords to log in.
 
 * https://github.com/settings/ssh/new
 * https://bitbucket.org/account/settings/ssh-keys/
+
+## Optional: Install Composer
+
+https://getcomposer.org/download/
+
+    cd ~
+    mv composer.phar .php/composer
+    echo '' >> ~/.bash_profile
+    echo '# allow run composer' >> ~/.bash_profile
+    echo 'PATH=$PATH:~/.php/' >> ~/.bash_profile
