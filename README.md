@@ -95,3 +95,8 @@ https://getcomposer.org/download/
     echo '' >> ~/.bash_profile
     echo '# allow run composer' >> ~/.bash_profile
     echo 'PATH=$PATH:~/.php/' >> ~/.bash_profile
+
+## Optional: update this repo
+
+    emacs ~/new-DH-user-account/.git/config
+    url = git@github.com:thunderrabbit/new-DH-user-account.git
