@@ -74,6 +74,10 @@ the point is to never use passwords to log in.
     cd ~
     ~/new-DH-user-account/cleanup.sh
 
+## Optional: set up Emacs with PHP-mode
+
+https://github.com/thunderrabbit/new-DH-user-account/blob/master/emacs-PHP.md
+
 ## Optional: create key for new server to ssh out
 
     cd ~
