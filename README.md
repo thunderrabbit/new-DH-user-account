@@ -6,9 +6,17 @@ It sets up `git`, `emacs`, and passwordless authentication, then essentially dis
 
 In the steps below, replace `example.com` with your new domain.
 
+## Point A Record to new domain
+
+If the DNS Name Servers are not Dreamhost,
+
+From DH Control panel -> Websites -> Manage Websites -> `example.com` -> Manage -> DNS
+
+and put that IP address as the A Record for the domain you're launching.
+
 ## Set up the new domain
 
-From Dreamhost Control Panel -> Domains -> Manage Domains -> [Add Hosting to a Domain / Sub-domain](https://panel.dreamhost.com/index.cgi?tree=domain.manage&current_step=Index&next_step=ShowAddhttp&domain=)
+From Dreamhost Control Panel -> Websites -> Manage Websites -> [Add Website](https://panel.dreamhost.com/index.cgi?tree=domain.dashboard#/website-adding/domain)
 
 Fill in the blanks, including create a new user.
 
@@ -16,7 +24,7 @@ Make note of the password created by Dreamhost.  We will need it where PASSWORD 
 
 ## Give shell access to the user
 
-Make sure the new user is a shell user at https://panel.dreamhost.com/index.cgi?tree=users.users
+From DH Control panel -> Websites -> Manage Websites -> `example.com` -> Manage -> Content -> Manage Files -> Login Info -> Secure Shell Access
 
 ## On local machine, create a new `ssh` key
     cd ~/.ssh
@@ -65,7 +73,7 @@ It's very very important you log in without password here!
 
 Enter the short PASSWORD created by Dreamhost when requested
 
-Now your password is 432 random characters.  
+Now your password is 432 random characters.
 It can be reset in control panel (to a measly 31 characters) but
 the point is to never use passwords to log in.
 
