@@ -6,9 +6,9 @@ DOMAIN=$(ls ~ | grep "\.")
 
 # first, set up git with my info
 git config --global core.excludesfile ~/.gitignore
+git config --global init.defaultBranch
 git config --global user.name "Rob Nugen"
 git config --global user.email $DOMAIN@robnugen.com
-git config --global alias.innit '!git init && git commit -m "Empty commit on which to base the repo" --allow-empty'
 
 # copy files from git repo to ~
 cp .bash_aliases $HOME/
