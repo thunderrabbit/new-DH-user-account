@@ -41,6 +41,9 @@ Append something like the following to `~/.ssh/config`:
         User example_user
         IdentityFile ~/.ssh/example.com
         IdentitiesOnly yes
+        ControlMaster auto
+        ControlPath ~/.ssh/cm-%r@%h:%p
+        ControlPersist 1h
 
 ## scp the public key to the new account using PASSWORD:
 
