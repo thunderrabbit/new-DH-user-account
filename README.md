@@ -101,6 +101,17 @@ https://github.com/thunderrabbit/new-DH-user-account/blob/master/emacs-PHP.md
 * https://github.com/settings/ssh/new
 * https://bitbucket.org/account/settings/ssh-keys/
 
+## Optional: Start with basic site
+
+Fork or clone basic site
+
+https://github.com/thunderrabbit/new-DH-user-site
+
+e.g. on local dev machine:
+
+    cd ~/
+    git clone git@github.com:marbletracks/db.marbletrack3.com.git db.mt3.com
+
 ## Optional: Install Composer
 
 https://getcomposer.org/download/
